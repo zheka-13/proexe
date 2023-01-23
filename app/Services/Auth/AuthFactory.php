@@ -16,7 +16,7 @@ class AuthFactory
      * @throws BindingResolutionException
      * @throws CompanyNotFoundException
      */
-    public static function buildAuth(string $prefix): AuthAdapter
+    public static function buildAuth(string $prefix): AuthAdapterInterface
     {
         switch ($prefix){
             case CompanyPrefixesEnum::PREFIX_BAR:

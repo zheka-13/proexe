@@ -2,12 +2,12 @@
 
 namespace App\Services\Auth\Adapters;
 
-use App\Services\Auth\AuthAdapter;
+use App\Services\Auth\AuthAdapterInterface;
 use App\Services\Auth\Enums\CompanyPrefixesEnum;
 use App\Services\Auth\Exceptions\AuthException;
 use External\Bar\Auth\LoginService;
 
-class BarAdapter implements AuthAdapter
+class BarAdapter implements AuthAdapterInterface
 {
 
     /**

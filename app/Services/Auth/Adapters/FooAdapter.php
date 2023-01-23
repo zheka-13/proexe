@@ -2,13 +2,13 @@
 
 namespace App\Services\Auth\Adapters;
 
-use App\Services\Auth\AuthAdapter;
+use App\Services\Auth\AuthAdapterInterface;
 use App\Services\Auth\Enums\CompanyPrefixesEnum;
 use App\Services\Auth\Exceptions\AuthException;
 use External\Foo\Auth\AuthWS;
 use External\Foo\Exceptions\AuthenticationFailedException;
 
-class FooAdapter implements AuthAdapter
+class FooAdapter implements AuthAdapterInterface
 {
     /**
      * @var AuthWS

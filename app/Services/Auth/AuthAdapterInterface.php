@@ -4,7 +4,7 @@ namespace App\Services\Auth;
 
 use App\Services\Auth\Exceptions\AuthException;
 
-interface AuthAdapter
+interface AuthAdapterInterface
 {
     /**
      * @param string $login

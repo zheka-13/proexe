@@ -2,13 +2,13 @@
 
 namespace App\Services\Auth\Adapters;
 
-use App\Services\Auth\AuthAdapter;
+use App\Services\Auth\AuthAdapterInterface;
 use App\Services\Auth\Enums\CompanyPrefixesEnum;
 use App\Services\Auth\Exceptions\AuthException;
 use External\Baz\Auth\Authenticator;
 use External\Baz\Auth\Responses\Failure;
 
-class BazAdapter implements AuthAdapter
+class BazAdapter implements AuthAdapterInterface
 {
 
     /**
